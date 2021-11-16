@@ -20,8 +20,8 @@
             <!-- <div class="overlay"></div> -->
             <div class="container">
                 <div class="container text-center text" data-aos="fade-up">
-                    <h1>Welcome to Company name!</h1>
-                    <p>Don't park your vechical on Road, It's so dengerous. Park your vechical in Company Name.</p>
+                    <h1>Welcome to SGGS Parking System</h1>
+                    <p>Don't park your vechical on Road, It's so dengerous. Park your vehicle in parking area only</p>
                     <a href=""><span class="arrow"><i class="fas fa-angle-double-right"></i></span></a>
                 </div>
             </div>
@@ -56,7 +56,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6" data-aos="zoom-in">
                     <div class="image">
-                        <img src="safe.jpeg" alt="">
+                        <img src="img/safe.jpeg" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6" data-aos="fade-up">

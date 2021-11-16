@@ -21,16 +21,17 @@ include("config.php");
         <?php require './partials/_nav.php' ?>
     </header>
     <section id="form">
+        <br><br><br><br><br><br><br>
         <div class="container">
             <form align="center" action="function.php" method="POST" data-aos="zoom-in">
                 <div class="form-group">
                     <input type="text" name="name" class="form-control text-white" placeholder="Enter Name..">
                 </div>
                 <div class="form-group">
-                    <input type="text" name="vname" class="form-control text-white" placeholder="Vechical Name..">
+                    <input type="text" name="vname" class="form-control text-white" placeholder="Vehicle Name..">
                 </div>
                 <div class="form-group">
-                    <input type="text" name="vnumber" class="form-control text-white" placeholder="Vechical Number..">
+                    <input type="text" name="vnumber" class="form-control text-white" placeholder="Vehicle Number..">
                 </div>
                 <div class="row">
                     <div class="col-md-6 form-group">
