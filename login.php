@@ -17,7 +17,7 @@
 <div id="nav-bar">
         <nav class="navbar navbar-expand-lg bg-primary">
 
-            <a class="navbar-brand" href="#"><img class="logo" src="./img/logo.png" alt=""></a>
+            <a class="navbar-brand" href="./index.php"><img class="logo" src="./img/logo.png" alt=""></a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,6 +50,31 @@
             </div>
         </nav>
     </div>
+
+    <section id="form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12" data-aos="fade-right">
+                    <img class="reg_img" src="./img/login.svg" alt="" height="300px">
+                </div>
+                <div class="col-lg-6 col-md-12 mt-5" data-aos="fade-left">
+                    <form align="center" action="reg_function.php" method="GET">
+
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control text-black" placeholder="Enter email..">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" name="password" class="form-control text-black" placeholder="Enter Password..">
+                        </div>
+
+                        <input class="submit_btn" type="submit" name="register" value="Login">
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
      <!------footer----->
      <div id="footer">

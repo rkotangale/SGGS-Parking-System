@@ -14,13 +14,12 @@
 </head>
 
 <body>
-<div id="nav-bar">
+    <div id="nav-bar">
         <nav class="navbar navbar-expand-lg bg-primary">
 
-            <a class="navbar-brand" href="#"><img class="logo" src="./img/logo.png" alt=""></a>
+            <a class="navbar-brand" href="./index.php"><img class="logo" src="./img/logo.png" alt=""></a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars"></i>
             </button>
 
@@ -51,21 +50,54 @@
         </nav>
     </div>
 
+    <section id="form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12" data-aos="fade-right">
+                    <img class="reg_img" src="./img/regi.svg" alt="" height="300px">
+                </div>
+                <div class="col-lg-6 col-md-12 mt-3" data-aos="fade-left">
+                    <form align="center" action="reg_function.php" method="POST">
+
+                        <div class="row">
+                            <div class="form-group col-lg-6 col-md-12">
+                                <input type="text" name="firstname" class="form-control text-black" placeholder="Enter First Name..">
+                            </div>
+                            <div class="form-group col-lg-6 col-md-12">
+                                <input type="text" name="lastname" class="form-control text-black" placeholder="Enter Last Name..">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control text-black" placeholder="Enter email..">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" name="password" class="form-control text-black" placeholder="Enter Password..">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" name="cpassword" class="form-control text-black" placeholder="Enter Confirm Password..">
+                        </div>
+
+                        <input class="submit_btn" type="submit" name="register" value="Register">
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
     <!------footer----->
     <div id="footer">
         <h5>Developed By</h5>
         <h5>Rajat Kotangale, Sanskruti Sawalkar & Snehal Deshpande</h5>
         <p>@2021-2022</p>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({

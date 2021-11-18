@@ -8,7 +8,7 @@ include("config.php");
         $exit=$_POST['exit'];
         
 
-        $result=mysqli_query($vehicle_data,"INSERT into vehicle_data values('','$name','$vname','$vnumber','$entry','$exit')");
+        $result=mysqli_query($db_data,"INSERT into vehicle_data values('','$name','$vname','$vnumber','$entry','$exit')");
 
         if($result){
             header("location:regi_vehicle.php");
