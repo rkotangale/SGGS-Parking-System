@@ -55,7 +55,6 @@ include("config.php");
     </div>
 
     <section id="form">
-    <br><br><br><br><br><br><br>
         <div class="container">
 
             <table class="table table-dark" id="table">
