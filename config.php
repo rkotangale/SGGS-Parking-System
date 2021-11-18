@@ -1,7 +1,7 @@
 <?php
 
 $dbhost='localhost';
-$dbname='parkingsystem';
+$dbname='sggs_parking_system';
 $dbusername='root';
 $dbpass='';
 

@@ -17,9 +17,43 @@ include("config.php");
 </head>
 
 <body>
-    <header id="topheader">
-        <?php require './partials/_nav.php' ?>
-    </header>
+<div id="nav-bar">
+        <nav class="navbar navbar-expand-lg bg-primary">
+
+            <a class="navbar-brand" href="#"><img class="logo" src="./img/logo.png" alt=""></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.php">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./login.php">LOGIN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./signup.php">SIGNUP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./logout.php">LOGOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./regi_vehicle.php">REGISTER VEHICLE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./vehicle_details.php">VEHICLE DETAILS</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+
     <section id="form">
         <div class="container">
 
@@ -34,27 +68,40 @@ include("config.php");
                     </tr>
                 </thead>
                 <?php
-
-                $result = mysqli_query($vehicle_data, "SELECT * FROM vehicle_data ORDER BY ID DESC");
-
-                while ($res = mysqli_fetch_array($result)) {
-                    echo "<tr>";
-                    echo "<td>" . $res['name'] . "</td>";
-                    echo "<td>" . $res['vname'] . "</td>";
-                    echo "<td>" . $res['vnumber'] . "</td>";
-                    echo "<td>" . $res['entry'] . "</td>";
-                    echo "<td>" . $res['exit'] . "</td>";
-                    echo "</tr>";
-                }
-                ?>
+    
+                    $result = mysqli_query($vehicle_data, "SELECT * FROM vehicle_data ORDER BY ID DESC");
+    
+                    while ($res = mysqli_fetch_array($result)) {
+                        echo "<tr>";
+                        echo "<td>" . $res['name'] . "</td>";
+                        echo "<td>" . $res['vname'] . "</td>";
+                        echo "<td>" . $res['vnumber'] . "</td>";
+                        echo "<td>" . $res['entry'] . "</td>";
+                        echo "<td>" . $res['exit'] . "</td>";
+                        echo "</tr>";
+                    }
+                    ?>
             </table>
 
         </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!------footer----->
+    <div id="footer">
+        <h5>Developed By</h5>
+        <h5>Rajat Kotangale, Sanskruti Sawalkar & Snehal Deshpande</h5>
+        <p>@2021-2022</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
