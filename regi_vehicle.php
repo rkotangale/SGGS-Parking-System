@@ -17,54 +17,21 @@ include("config.php");
 </head>
 
 <body>
-<div id="nav-bar">
-        <nav class="navbar navbar-expand-lg bg-primary">
-
-            <a class="navbar-brand" href="#"><img class="logo" src="./img/logo.png" alt=""></a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa fa-bars"></i>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.php">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./login.php">LOGIN</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./signup.php">SIGNUP</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./logout.php">LOGOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./regi_vehicle.php">REGISTER VEHICLE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./vehicle_details.php">VEHICLE DETAILS</a>
-                    </li>
-                </ul>
-
-            </div>
-        </nav>
-    </div>
-
+    <header id="topheader">
+        <?php require './partials/_nav.php' ?>
+    </header>
     <section id="form">
+        <br><br><br><br><br><br><br>
         <div class="container">
             <form align="center" action="function.php" method="POST" data-aos="zoom-in">
                 <div class="form-group">
-                    <input type="text" name="name" class="form-control text-black" placeholder="Enter Name..">
+                    <input type="text" name="name" class="form-control text-white" placeholder="Enter Name..">
                 </div>
                 <div class="form-group">
-                    <input type="text" name="vname" class="form-control text-black" placeholder="Vehicle Name..">
+                    <input type="text" name="vname" class="form-control text-white" placeholder="Vehicle Name..">
                 </div>
                 <div class="form-group">
-                    <input type="text" name="vnumber" class="form-control text-black" placeholder="Vehicle Number..">
+                    <input type="text" name="vnumber" class="form-control text-white" placeholder="Vehicle Number..">
                 </div>
                 <div class="row">
                     <div class="col-md-6 form-group">
@@ -74,18 +41,11 @@ include("config.php");
                         <input onfocus="(this.type='date')" name="exit" class="form-control" placeholder="Exit Date" required="">
                     </div>
                 </div>
-                <input class="submit_btn" type="submit" name="submit">
-            </form>
+                <input type="submit" name="submit">
+            </form><br>
 
         </div>
     </section>
-
-    <!------footer----->
-    <div id="footer">
-        <h5>Developed By</h5>
-        <h5>Rajat Kotangale, Sanskruti Sawalkar & Snehal Deshpande</h5>
-        <p>@2021-2022</p>
-    </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
